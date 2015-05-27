@@ -9,3 +9,5 @@ package 'httpd'
 service 'httpd' do
   action [ :enable, :start ]
 end
+
+include_recipe 'app::mysql_service'
